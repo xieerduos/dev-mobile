@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [id] {
+            background-color: #c90;
+        }
+        #qb{
+           width: 100px;
+           height: 100px; 
+        }
+
+        [href*=javas] {
+            color: red;
+        }
+
+        [tem]{
+            border: 2px solid #ccc;
+            width: 100px;
+            height: 100px;
+        }
+
+        [tem$=ds999] {
+            background-color: rgba(120, 3, 222, .5);
+        }
+
+
+        [obj=myobj] {
+            background-color: rgba(98, 78, 4, 0.3);
+            width: 100px;
+            height: 200px;
+        }
+        a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #0fc;
+        }
+
+       [attr=a] a:nth-child(6){
+            background-color: red;
+        }
+       [attr=a] a:last-child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="qb"></div>
+    <a href="javascript:;">color颜色</a>
+
+    <div tem="h"></div>
+    <div tem="hdsds999"></div>
+
+    <div obj="myobj"></div>
+
+
+
+    <div attr="a">
+
+        <a href="">1你好</a>
+        <a href="">2你好</a>
+        <a href="">3你好</a>
+        <a href="">4你好</a>
+        <a href="">5你好</a>
+        <a href="">6你好</a>
+        <a href="">7你好</a>
+        <a href="">8你好</a>
+        <a href="">9你好</a>
+        <a href="">10你好</a>
+    </div>
+        
+    </body>
+    </html>

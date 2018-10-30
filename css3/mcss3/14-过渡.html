@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡</title>
+    <style>
+        body, div{
+            padding: 0;margin: 0;
+        }
+
+        .box {
+            transition-property: width;
+            transition-duration: 0.9s;
+            /* transition-timing-function: ease; */
+            transition-timing-function: ease-in;
+            /* transition-timing-function: ease-out; */
+
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background-color: #aaa;
+        }
+
+        .box:hover {
+            width: 900px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            background-color: lightblue;
+            transition: all 1s ease 0.5s;
+        }
+        .box2:hover {
+            width: 300px;
+            height: 50px;
+            opacity: .5;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+    <input id="btn" type="button" value="改变box2盒子的宽度">
+</body>
+<script>
+    window.onload = function(){
+        document.querySelector('#btn').addEventListener('click', function(){
+            document.querySelector('.box2').style.width = '600px';
+        }, false)
+    }
+</script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 段落中的第一个字符 */
+        p::first-letter {
+            font-size: 40px;
+        }
+
+        /* 第一行 */
+        p::first-line {
+            color: magenta;
+        }
+        
+        /* 伪类兼容老的浏览器的话， 可以继续使用单个冒号 */
+
+        p::before{
+            /* content: '你好呀，伪元素！';
+            display: block;
+            border: 1px solid #ccc;
+            height: 30px;
+            line-height: 30px; */
+        }
+
+        p::selection {
+            background-color: lightcoral;
+            /* font-size: 30x; */
+            color: red;
+        }
+
+        p:target {
+            background-color: #0ff;
+        }
+        
+        .click-handler {
+            cursor: pointer;
+        }
+
+        .click-handler:link, .click-handler:visited {
+            color: red;
+        }
+        .click-handler:hover {
+            color: #0ff;
+        }
+
+        /* :link,:visited,:hover,:active */
+    </style>
+</head>
+<body>
+    <a class="click-handler">点击样式变化</a>
+
+
+    <a href="#txt1">段落1</a>
+    <a href="#txt2">段落2</a>
+    <a href="#txt3">段落3</a>
+    <a href="#txt4">段落4</a>
+
+    <p id="txt1">
+        你好啊，老马的Q：515154084 <br >
+        老马的腾讯课堂： http://qtxh.ke.qq.com  <br>
+
+        老马的传课地址：https://chuanke.baidu.com/s5508922.html
+    </p>
+    <p id="txt2">
+        你好啊，老马的Q：515154084 <br >
+        老马的腾讯课堂： http://qtxh.ke.qq.com  <br>
+    
+        老马的传课地址：https://chuanke.baidu.com/s5508922.html
+        
+    </p>
+    <p id="txt3">
+        你好啊，老马的Q：515154084 <br >
+        老马的腾讯课堂： http://qtxh.ke.qq.com  <br>
+    
+        老马的传课地址：https://chuanke.baidu.com/s5508922.html
+        
+    </p>
+    <p id="txt4">
+        你好啊，老马的Q：515154084 <br >
+        老马的腾讯课堂： http://qtxh.ke.qq.com  <br>
+    
+        老马的传课地址：https://chuanke.baidu.com/s5508922.html
+
+    </p>
+</body>
+</html>

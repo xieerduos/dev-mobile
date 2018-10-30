@@ -1,0 +1,9 @@
+.box {
+  flex-flow: column nowrap;
+  display: flex;
+}
+
+.wrap {
+  animation: sss .2s linear;
+  flex-flow: row nowrap;
+}
